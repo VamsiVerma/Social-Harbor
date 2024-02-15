@@ -10,3 +10,13 @@ export default defineConfig({
     },
   },
 });
+
+// server: {
+//   proxy: {
+//     "/v1": {
+//       target: "https://cloud.appwrite.io",
+//       changeOrigin: false,
+//       rewrite: (path) => path.replace(/^\/v1/, "/v1"),
+//     },
+//   },
+// },
