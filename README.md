@@ -1,4 +1,4 @@
-# SnapGram Project
+# Social Harbor Project
 
 In works---
 
