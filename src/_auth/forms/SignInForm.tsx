@@ -24,6 +24,7 @@ const SignInForm = () => {
   const { toast } = useToast();
   const { checkAuthUser, isLoading: isUserLoading } = useUserContext();
   const navigate = useNavigate();
+  console.log(isUserLoading);
 
   //What's done here is React Qury is implemented which calls the API and sends the data back mutateAsync is calling createUserAccount
   const { mutateAsync: signInAccount } = useSignInAccount();
@@ -66,7 +67,7 @@ const SignInForm = () => {
   return (
     <Form {...form}>
       <div className="sm:w-420 flex-center flex-col">
-        <img src="/assets/images/logo.svg" alt="logo" />
+        <img src="/assets/images/logo.svg" alt="site logo" width={264} />
 
         <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12">
           Log in to your account
